@@ -5,11 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-
-
-    
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
   <!-- Bootstrap Icons CDN -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -98,24 +96,28 @@
     <div class="container d-flex justify-content-between align-items-center">
       <div>
         <i class="bi bi-telephone me-2"></i> +91 87345 67890
+
+
+
         <span class="ms-4"><i class="bi bi-envelope me-2"></i>
           info@eliteedgeframing.com</span>
       </div>
       <div>
         <span class="me-2">Follow Us:</span>
-        <a href="#" class="text-black me-3"><i class="bi bi-twitter"></i></a>
-        <a href="#" class="text-black me-3"><i class="bi bi-facebook"></i></a>
-        <a href="#" class="text-black me-3"><i class="bi bi-youtube"></i></a>
-        <a href="#" class="text-black"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.twitter.com" class="text-black me-3"><i class="bi bi-twitter"></i></a>
+        <a href="https://facebook.com" class="text-black me-3"><i class="bi bi-facebook"></i></a>
+        <a href="https://youtube.com" class="text-black me-3"><i class="bi bi-youtube"></i></a>
+        <a href="https://instagram.com" class="text-black"><i class="bi bi-instagram"></i></a>
       </div>
     </div>
   </div>
   <!-- top bar pages End-->
-  <header>
+
+  <header class="sticky-top">
     <nav class="navbar navbar-expand-lg bg-body-tertiary ">
       <div class="container-fluid $cyan-200">
         <a class="navbar-brand" href="#"><b>EliteEdge Framing</b></a>
-        
+
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent " aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -131,10 +133,10 @@
             <li class="nav-item">
               <a class="nav-link" href="service.html">Services</a>
             </li>
-             <li class="nav-item">
+            <li class="nav-item">
               <a class="nav-link" href="contact.html">Contact</a>
             </li>
-             <li class="nav-item">
+            <li class="nav-item">
               <a class="nav-link" href="product.html">Product</a>
             </li>
             <li class="nav-item dropdown">
@@ -145,7 +147,7 @@
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="photo.html">Photo</a></li>
                 <li><a class="dropdown-item" href="video.html">Videos</a></li>
-                 <li><a class="dropdown-item" href="feedback.html">feedback Form</a></li>
+                <li><a class="dropdown-item" href="feedback.html">feedback Form</a></li>
               </ul>
             </li>
           </ul>
@@ -153,7 +155,6 @@
       </div>
     </nav>
   </header>
-
 
   <main>
     <section>
@@ -225,7 +226,7 @@
 
   <main>
     <section>
-      <div class="container py-5 text-center mt-5">
+      <div class="container py-5 text-center mt-2">
         <div class="row g-4">
           <!-- Card 1 -->
           <div class="col-md-4">
@@ -286,7 +287,49 @@
               At EliteEdge Framing, we combine craftsmanship, precision, and style to deliver frames that truly stand
               out. Here’s why our clients choose us again and again:
             </p>
-            <a href="#" class="btn btn-success p-3 mt-3">Explore More</a>
+          <!-- Explore More Button -->
+<a href="#" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exploreModal">
+  Explore More
+</a>
+<!-- Explore More Modal -->
+<div class="modal fade" id="exploreModal" tabindex="-1" aria-labelledby="exploreModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+
+      <!-- Header -->
+      <div class="modal-header">
+        <h5 class="modal-title fw-bold text-success" id="exploreModalLabel">Explore More About Us</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <!-- Body -->
+      <div class="modal-body">
+        <p class="text-muted">
+          🌟 At <b>EliteEdge Framing</b>, we believe in delivering the finest quality frames with 
+          a blend of precision and creativity.
+        </p>
+        <ul class="text-muted">
+          <li>✔ Premium quality framing materials</li>
+          <li>✔ Custom designs to suit your style</li>
+          <li>✔ Affordable pricing with no hidden costs</li>
+          <li>✔ Dedicated 24/7 support</li>
+        </ul>
+        <p class="text-muted">
+          Whether it’s for your home, office, or gallery — we frame your memories beautifully.
+        </p>
+      </div>
+
+      <!-- Footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-success" data-bs-dismiss="modal">Close</button>
+        <a href="service.html" class="btn btn-success">View Services</a>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
           </div>
 
           <!-- Right Content  -->
@@ -360,14 +403,54 @@
 
         <!-- Right Content -->
         <div class="col-md-6">
-          <h2 class="display-4 text-success fw-bold">25</h2>
+          <h2 class="display-4 text-success fw-bold">15</h2>
           <p class="text-success">Years of Experience</p>
           <h3 class="fw-bold">Creativity with Purpose</h3>
           <p class="text-muted">
             Every design choice blends artistry with functionality, creating gardens that inspire beauty while serving
             everyday life.
           </p>
-          <a href="product.html" class="btn btn-success">Explore More</a>
+          <a href="#" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exploreModal">
+            Explore More
+          </a>
+          <!-- Explore More Modal -->
+          <div class="modal fade" id="exploreModal" tabindex="-1" aria-labelledby="exploreModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+              <div class="modal-content">
+
+                <!-- Header -->
+                <div class="modal-header">
+                  <h5 class="modal-title fw-bold text-success" id="exploreModalLabel">Discover More with EliteEdge
+                    Framing</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <!-- Body -->
+                <div class="modal-body">
+                  <p class="text-muted">
+                    🌟 At <b>EliteEdge Framing</b>, we bring precision, style, and creativity into every project.
+                  </p>
+                  <ul class="text-muted">
+                    <li>✔ Premium quality framing materials</li>
+                    <li>✔ Creative custom designs tailored to your style</li>
+                    <li>✔ Affordable pricing with no hidden costs</li>
+                    <li>✔ Dedicated support and 24/7 availability</li>
+                  </ul>
+                  <p class="text-muted">
+                    Whether it’s for your home, office, or gallery — our frames make your moments unforgettable.
+                  </p>
+                </div>
+
+                <!-- Footer -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Close</button>
+                  <a href="service.html" class="btn btn-success">View Our Services</a>
+                </div>
+
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -391,24 +474,22 @@
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<section>
-  <div class="container ">
-    <div class="row">
-      <div class="col-md3">
-         <nav aria-label="Page navigation example ">
-  <ul class="pagination justify-content-center mt-4">
-    <li class="page-item bg-primary"><a class="page-link" href="index.html">Previous page</a></li> 
-     <li class="page-item bg-primary"><a class="page-link" href="service.html">Next page</a></li>   
+    <section>
+      <div class="container ">
+        <div class="row">
+          <div class="col-md3">
+            <nav aria-label="Page navigation example ">
+              <ul class="pagination justify-content-center mt-4">
+                <li class="page-item bg-primary"><a class="page-link" href="index.html">Previous page</a></li>
+                <li class="page-item bg-primary"><a class="page-link" href="service.html">Next page</a></li>
+          </div>
+          <div class="col-md-3">
+          </div>
+        </div>
       </div>
-      <div class="col-md-3">       
-      </div>
-    </div>
-  </div>
-  </section>
-
-
+    </section>
     <!-- add new page End -->
- 
+
 
 
 
@@ -484,4 +565,5 @@
       integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous">
       </script>
 </body>
+
 </html>
