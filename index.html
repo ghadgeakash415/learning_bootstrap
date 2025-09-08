@@ -5,58 +5,156 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  
-<link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
-      crossorigin="anonymous">
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      rel="stylesheet">
-    <!-- Bootstrap Icons CDN -->
-    <link rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-    <style>
-      .link-success-hover:hover {
-        color: #198754 !important; /* Bootstrap green */
-      }
-    .nav-item:hover{
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+
+  <!-- Fix Icons strat -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+  <!-- Fix Icons end -->
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+
+  <!-- services section start -->
+
+  <style>
+    .link-success-hover:hover {
+      color: #198754 !important;
+      /* Bootstrap green */
+    }
+
+    .nav-item:hover {
       background-color: black;
       height: 2px;
     }
+
+
+
+
+
+    /* fix Icons css  start*/
+
+    .icon-bar {
+      position: fixed;
+      top: 55%;
+      right: 0;
+      transform: translateY(-50%);
+      display: flex;
+      flex-direction: column;
+      z-index: 1000;
+    }
+
+    .icon-bar a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 30px;
+      height: 30px;
+      margin: 5px 0;
+      background: #3aa6f2;
+      color: white;
+      font-size: 14px;
+      text-decoration: none;
+      border-radius: 50%;
+      transition: 0.2s;
+      animation: slideInRight 1s ease forwards, pulse 1s infinite;
+    }
+
+    /* Slide in on load */
+    @keyframes slideInRight {
+      from {
+        transform: translateX(150%);
+        opacity: 0;
+      }
+
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+    /* Pulse animation */
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+      }
+
+      50% {
+        transform: scale(1.1);
+      }
+
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    /* Shake animation */
+    @keyframes shake {
+      0% {
+        transform: translateX(0);
+      }
+
+      25% {
+        transform: translateX(-4px);
+      }
+
+      50% {
+        transform: translateX(4px);
+      }
+
+      75% {
+        transform: translateX(-4px);
+      }
+
+      100% {
+        transform: translateX(0);
+      }
+    }
+
+    /* Hover effects */
+    .icon-bar a:hover {
+      background: black;
+      animation: shake 0.5s, pulse 2s infinite;
+    }
+
+    /* fix Icons css  start*/
   </style>
 </head>
 
 <body>
-  <!-- top bar pages Strat --> 
-    <div class="top-bar text-black py-3">
-      <div class="container d-flex justify-content-between align-items-center">
-        <div>
-          <i class="bi bi-telephone me-2"></i> +91 87345 67890
-          <span class="ms-4"><i class="bi bi-envelope me-2"></i>
-            info@eliteedgeframing.com</span>
-        </div>
-        <div>
-          <span class="me-2">Follow Us:</span>
-          <a href="https://www.twitter.com" class="text-black me-3"><i class="bi bi-twitter"></i></a>
-          <a href="https://facebook.com" class="text-black me-3"><i class="bi bi-facebook"></i></a>
-          <a href="https://youtube.com" class="text-black me-3"><i class="bi bi-youtube"></i></a>
-          <a href="https://instagram.com" class="text-black"><i class="bi bi-instagram"></i></a>
-        </div>
+  <!-- top bar pages Strat -->
+  <div class="top-bar text-black py-3">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div>
+        <i class="bi bi-telephone me-2"></i> +91 87345 67890
+        <span class="ms-4"><i class="bi bi-envelope me-2"></i>
+          info@eliteedgeframing.com</span>
+      </div>
+      <div>
+        <span class="me-2">Follow Us:</span>
+        <a href="https://www.twitter.com" class="text-black me-3"><i class="bi bi-twitter"></i></a>
+        <a href="https://facebook.com" class="text-black me-3"><i class="bi bi-facebook"></i></a>
+        <a href="https://youtube.com" class="text-black me-3"><i class="bi bi-youtube"></i></a>
+        <a href="https://instagram.com" class="text-black"><i class="bi bi-instagram"></i></a>
       </div>
     </div>
-    <!-- top bar pages End--> 
+  </div>
+  <!-- top bar pages End-->
 
   <header class="sticky-top">
     <nav class="navbar navbar-expand-lg bg-body-tertiary ">
       <div class="container-fluid $cyan-200">
-        <!-- <a class="navbar-brand" href="#"><b>EliteEdge Framing</b></a> -->
 
-        <a class="navbar-brand fw-bold fs-1 text-success col-md-1"
-            href="index.html"><img src="images/logo2.png" class="img-fluid" alt=""></a>
-        
+        <a class="navbar-brand fw-bold fs-1 text-success col-md-1" href="index.html"><img src="images/logo2.png"
+            class="img-fluid"  alt=""></a>
+
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent " aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -72,10 +170,10 @@
             <li class="nav-item">
               <a class="nav-link" href="service.html">Services</a>
             </li>
-             <li class="nav-item">
+            <li class="nav-item">
               <a class="nav-link" href="contact.html">Contact</a>
             </li>
-             <li class="nav-item">
+            <li class="nav-item">
               <a class="nav-link" href="product.html">Product</a>
             </li>
             <li class="nav-item dropdown">
@@ -86,7 +184,7 @@
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="photo.html">Photo</a></li>
                 <li><a class="dropdown-item" href="video.html">Videos</a></li>
-                 <li><a class="dropdown-item" href="feedback.html">feedback Form</a></li>
+                <li><a class="dropdown-item" href="feedback.html">feedback Form</a></li>
               </ul>
             </li>
           </ul>
@@ -104,8 +202,8 @@
               <div class="carousel-inner">
                 <div class="carousel-item" data-bs-interval="1500">
                   <img src="images/bnners8.webp" class="d-block w-100" alt="...">
-                  <div class="carousel-caption d-none d-md-block">          
-                    
+                  <div class="carousel-caption d-none d-md-block">
+
                   </div>
                 </div>
                 <div class="carousel-item" data-bs-interval="1500">
@@ -115,8 +213,8 @@
                 </div>
                 <div class="carousel-item active" data-bs-interval="1500">
                   <img src="images/bnners4.webp" class="d-block w-100" alt="...">
-                  <div class="carousel-caption d-none d-md-block">              
-                    
+                  <div class="carousel-caption d-none d-md-block">
+
                   </div>
                 </div>
               </div>
@@ -142,38 +240,47 @@
 
   <!-- services section start -->
   <section>
-    <div class="container mt-3">
-      <div class="row">
-        <div class="col-md-3">
-          <div class="card" >
-            <img src="images/bnners6.webp" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">EliteEdge Framing is a professional framing service that specializes in creating high-quality, durable, and stylish frames for photos, artworks, certificates, and custom designs.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card" >
-            <img src="images/bnners5.webp" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">EliteEdge Framing is a professional framing service that specializes in creating high-quality, durable, and stylish frames for photos, artworks, certificates, and custom designs.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card" >
-            <img src="images/bnners7.webp" class="card-img-top" alt="...">
+    <div class="container mt-5">
+      <div class="row g-4">
 
+        <div class="col-md-3" data-aos="zoom-in" data-aos-duration="800">
+          <div class="card shadow-lg border-0 rounded-4 overflow-hidden">
+            <img src="images/n7.webp" class="card-img-top" alt="...">
             <div class="card-body">
-              <p class="card-text">EliteEdge Framing is a professional framing service that specializes in creating high-quality, durable, and stylish frames for photos, artworks, certificates, and custom designs.</p>
+              <p class="card-text">EliteEdge Framing is a professional framing service that specializes in creating
+                high-quality, durable, and stylish frames for photos, artworks, certificates, and custom designs.</p>
             </div>
           </div>
         </div>
-        <div class="col-md-3">
-          <div class="card">
-            <img src="images/bnners9.webp" class="card-img-top" alt="...">
+
+        <div class="col-md-3" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+          <div class="card shadow-lg border-0 rounded-4 overflow-hidden">
+            <img src="images/n30.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <p class="card-text">EliteEdge Framing is a professional framing service that specializes in creating high-quality, durable, and stylish frames for photos, artworks, certificates, and custom designs..</p>
+              <p class="card-text"> Vision: To become a trusted name in professional framing by offering designs that
+                blend art, durability, and affordability.
+
+                </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3" data-aos="flip-left" data-aos-duration="800" data-aos-delay="400">
+          <div class="card shadow-lg border-0 rounded-4 overflow-hidden">
+            <img src="images/n9.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">EliteEdge Framing is a professional framing service that specializes in creating
+                high-quality, durable, and stylish frames for photos, artworks, certificates, and custom designs.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3" data-aos="fade-down" data-aos-duration="800" data-aos-delay="600">
+          <div class="card shadow-lg border-0 rounded-4 overflow-hidden">
+            <img src="images/mo4.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Mission: To provide customized framing solutions that safeguard memories, inspire creativity, and bring
+                elegance into every space we serve..</p>
             </div>
           </div>
         </div>
@@ -181,144 +288,144 @@
       </div>
     </div>
   </section>
+
+  <!-- Add AOS JS before closing body -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   <!-- services section end -->
 
+
+
+
   <!-- new pages Start-->
-   
-<div class="container py-5">
-  <div class="row align-items-center">
-    <!-- Left Content -->
-    <div class="col-lg-6 mb-4 mb-lg-0">
-      <p class="text-uppercase small fw-bold">Frames that will last a lifetime</p>
-      <h2 class="fw-bold mb-4">Museum Quality &<br>Sustainable</h2>
-      <p class="mb-4">
-        More than 99% of photo frames made in India are made out of plastic. 
-        We are on a mission to provide the highest quality, sustainable frames 
-        that are made of 100% solid wood, aluminium metal & high-density 
-        polystyrene at the best price. Built by our team of experienced framers, 
-        every single piece is custom framed, museum-quality and only then is it shipped by us.
-      </p>
-      <a href="product.html" class="btn btn-dark">Start Framing</a>
-    </div>
-    <!-- Right Images -->
-    <div class="col-lg-6">
-      <div class="row g-3">
-        <div class="col-6">
-          <img src="images/in3.webp" alt="Baby Sleeping" class="img-fluid rounded shadow">
-        </div>
-        <div class="col-6">
-          <img src="images/in4.webp" alt="Framed Photo" class="img-fluid rounded shadow">
+
+  <div class="container py-5">
+    <div class="row align-items-center">
+      <!-- Left Content -->
+      <div class="col-lg-6 mb-4 mb-lg-0">
+        <p class="text-uppercase small fw-bold">Frames that will last a lifetime</p>
+        <h2 class="fw-bold mb-4">Museum Quality &<br>Sustainable</h2>
+        <p class="mb-4">
+          More than 99% of photo frames made in India are made out of plastic.
+          We are on a mission to provide the highest quality, sustainable frames
+          that are made of 100% solid wood, aluminium metal & high-density
+          polystyrene at the best price. Built by our team of experienced framers,
+          every single piece is custom framed, museum-quality and only then is it shipped by us.
+        </p>
+        <a href="product.html" class="btn btn-dark">Start Framing</a>
+      </div>
+      <!-- Right Images -->
+      <div class="col-lg-6">
+        <div class="row g-3">
+          <div class="col-6">
+            <img src="images/in3.webp" alt="Baby Sleeping" class="img-fluid rounded shadow">
+          </div>
+          <div class="col-6">
+            <img src="images/in4.webp" alt="Framed Photo" class="img-fluid rounded shadow">
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
 
   <!-- new pages End -->
-   <section>
-  <div class="container ">
-    <div class="row">
-      <div class="col-md3">
-         <nav aria-label="Page navigation example ">
-  <ul class="pagination justify-content-center mt-4">
-    <li class="page-item bg-primary"><a class="page-link" href="index.html">Previous page</a></li> 
-     <li class="page-item bg-primary"><a class="page-link" href="about.html">Next page</a></li>   
-      </div>
-      <div class="col-md-3">       
+  <section>
+    <div class="container ">
+      <div class="row">
+        <div class="col-md3">
+          <nav aria-label="Page navigation example ">
+            <ul class="pagination justify-content-center mt-4">
+              <li class="page-item bg-primary"><a class="page-link" href="index.html">Previous page</a></li>
+              <li class="page-item bg-primary"><a class="page-link" href="about.html">Next page</a></li>
+        </div>
+        <div class="col-md-3">
+        </div>
       </div>
     </div>
-  </div>
   </section>
-    <!-- Footer Start -->
-    <footer class="text-white pt-5 pb-5 mt-4 " style="background-color: hsla(197, 22%, 75%, 0.737);">
-      <div class="container mt-5 mb-5 text-black">
-        <div class="row mt-3">
 
-          <!-- Our Office -->
-          <div class="col-md-4 mb-4 ">
-            <h5 class="fw-bold mb-4">Our Office</h5>
-            <p><i class="fa fa-map-marker-alt me-2"></i>125 Chinchwad, Pune,
-              India</p>
-            <p><i class="fa fa-phone-alt me-2"></i>+91 9356977531</p>
-            <p><i class="fa fa-envelope me-2"></i>info@eliteedgeframing.com</p>
-            <div class="d-flex gap-2">
-              <a href="https://www.twitter.com"
-                class="btn btn-outline-light btn-sm rounded-circle text-black"><i
-                  class="fab fa-twitter"></i></a>
-              <a href="https://www.facebook.com"
-                class="btn btn-outline-light btn-sm rounded-circle text-black"><i
-                  class="fab fa-facebook-f"></i></a>
-              <a href="https://www.youtube.com/"
-                class="btn btn-outline-light btn-sm rounded-circle text-black"><i
-                  class="fab fa-youtube"></i></a>
-              <a href="https://www.in-linkedin.com3"
-                class="btn btn-outline-light btn-sm rounded-circle text-black"><i
-                  class="fab fa-linkedin-in"></i></a>
-            </div>
+
+
+  <!-- Fix Icons in Home Page Start  -->
+  <div class="icon-bar">
+    <a href="tel:+9767213735"><i class="fas fa-phone"></i></a>
+    <a href="mailto:info@example.com"><i class="fas fa-envelope"></i></a>
+    <a href="https://www.google.com"><i class="fas fa-globe"></i></a>
+  </div>
+
+  <!-- Fix Icons in Home Page End -->
+
+  <!-- Footer Start -->
+  <footer class="text-white pt-5 pb-5 mt-4 " style="background-color: hsla(197, 22%, 75%, 0.737);">
+    <div class="container mt-5 mb-5 text-black">
+      <div class="row mt-3">
+
+        <!-- Our Office -->
+        <div class="col-md-4 mb-4 ">
+          <h5 class="fw-bold mb-4">Our Office</h5>
+          <p><i class="fa fa-map-marker-alt me-2"></i>125 Chinchwad, Pune,
+            India</p>
+          <p><i class="fa fa-phone-alt me-2"></i>+91 9356977531</p>
+          <p><i class="fa fa-envelope me-2"></i>info@eliteedgeframing.com</p>
+          <div class="d-flex gap-2">
+            <a href="https://www.twitter.com" class="btn btn-outline-light btn-sm rounded-circle text-black"><i
+                class="fab fa-twitter"></i></a>
+            <a href="https://www.facebook.com" class="btn btn-outline-light btn-sm rounded-circle text-black"><i
+                class="fab fa-facebook-f"></i></a>
+            <a href="https://www.youtube.com/" class="btn btn-outline-light btn-sm rounded-circle text-black"><i
+                class="fab fa-youtube"></i></a>
+            <a href="https://www.in-linkedin.com3" class="btn btn-outline-light btn-sm rounded-circle text-black"><i
+                class="fab fa-linkedin-in"></i></a>
           </div>
-
-          <!-- Services -->
-          <div class="col-md-4 mb-4">
-            <h5 class="fw-bold mb-4">Services</h5>
-            <ul class="list-unstyled">
-              <li> <a href="#"
-                  class="text-black text-decoration-none">✔ High Quality Frames</a></li>
-              <li> <a href="#"
-                  class="text-black text-decoration-none">✔ Custom Frame Designs
-                  Plants</a></li>
-              <li> <a href="#"
-                  class="text-black text-decoration-none">✔ Affordable Pricing</a></li>
-              <li> <a href="#"
-                  class="text-black text-decoration-none">✔ Fast & Reliable Service
-                  Maintenance</a></li>
-              <li> <a href="#"
-                  class="text-black text-decoration-none">✔ 100% Customer Satisfaction</a></li>
-             
-            </ul>
-          </div>
-
-          <!-- Quick Links -->
-          <div class="col-md-4 mb-4">
-            <h5 class="fw-bold mb-4">Quick Links</h5>
-            <ul class="list-unstyled">
-               <li> <a href="index.html"
-                  class="text-black text-decoration-none">✔ Home</a></li>
-              <li> <a href="about.html"
-                  class="text-black text-decoration-none">✔ About Us</a></li>
-              <li> <a href="service.html"
-                  class="text-black text-decoration-none">✔ Services</a></li>
-              <li> <a href="product.html"
-                  class="text-black text-decoration-none">✔ Product</a></li>
-              <li> <a href="contact.html"
-                  class="text-black text-decoration-none">✔ Contact</a></li>                  
-              <li> <a href="photo.html"
-                  class="text-black text-decoration-none">✔ Gallary</a></li>
-              <li> <a href="photo.html"
-                  class="text-black text-decoration-none">✔ Photo</a></li>
-              <li> <a href="video.html"
-                  class="text-black text-decoration-none">✔ Video</a></li>
-              <li> <a href="feedback.html"
-                  class="text-black text-decoration-none">✔ Feedback Form</a></li>
-            </ul>
-          </div>
-
         </div>
-      </div>
 
-      <!-- Bottom -->
-      <div class="py-3" style="background-color:black;">
-        <div
-         <br>
-    <marquee direction="right" behavior="scroll" scrollamount="5">
-©  EliteEdge Framing!
-</marquee>
-         
-        
-              
+        <!-- Services -->
+        <div class="col-md-4 mb-4">
+          <h5 class="fw-bold mb-4">Services</h5>
+          <ul class="list-unstyled">
+            <li> <a href="#" class="text-black text-decoration-none">✔ High Quality Frames</a></li>
+            <li> <a href="#" class="text-black text-decoration-none">✔ Custom Frame Designs
+                Plants</a></li>
+            <li> <a href="#" class="text-black text-decoration-none">✔ Affordable Pricing</a></li>
+            <li> <a href="#" class="text-black text-decoration-none">✔ Fast & Reliable Service
+                Maintenance</a></li>
+            <li> <a href="#" class="text-black text-decoration-none">✔ 100% Customer Satisfaction</a></li>
+
+          </ul>
         </div>
+
+        <!-- Quick Links -->
+        <div class="col-md-4 mb-4">
+          <h5 class="fw-bold mb-4">Quick Links</h5>
+          <ul class="list-unstyled">
+            <li> <a href="index.html" class="text-black text-decoration-none">✔ Home</a></li>
+            <li> <a href="about.html" class="text-black text-decoration-none">✔ About Us</a></li>
+            <li> <a href="service.html" class="text-black text-decoration-none">✔ Services</a></li>
+            <li> <a href="product.html" class="text-black text-decoration-none">✔ Product</a></li>
+            <li> <a href="contact.html" class="text-black text-decoration-none">✔ Contact</a></li>
+            <li> <a href="photo.html" class="text-black text-decoration-none">✔ Gallary</a></li>
+            <li> <a href="photo.html" class="text-black text-decoration-none">✔ Photo</a></li>
+            <li> <a href="video.html" class="text-black text-decoration-none">✔ Video</a></li>
+            <li> <a href="feedback.html" class="text-black text-decoration-none">✔ Feedback Form</a></li>
+          </ul>
+        </div>
+
       </div>
-    </footer>
-    <!-- Footer End -->
+    </div>
+
+    <!-- Bottom -->
+    <div class="py-3" style="background-color:black;">
+      <div <br>
+        <marquee direction="right" behavior="scroll" scrollamount="4">
+          © EliteEdge Framing!
+        </marquee>
+
+      </div>
+    </div>
+  </footer>
+  <!-- Footer End -->
 
 
 
