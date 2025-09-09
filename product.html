@@ -608,76 +608,91 @@
 
 
   <!-- Card Buttons Start -->
-   <section>
-    <div class="container ">
-      <div class="row">
-        <div class="col-md-6 ">
-   <div class="container py-5 justify-content-center">
-  <h3 class="mb-4"> Add Cart</h3>
 
-   <!-- Checkout Form -->
-  <div class="card p-4 bg-black text-white">
-    <h5 class="mb-3">Enter Your Details</h5>
-    <form id="checkoutForm">
-      <div class="mb-3">
-        <label class="form-label">Mobile Number</label>
-        <input type="text" class="form-control" placeholder="Enter mobile number" required>
-      </div>
-      <div class="mb-3">
-        <label class="form-label">Email</label>
-        <input type="email" class="form-control" placeholder="Enter email address" required>
-      </div>
-      <div class="mb-3">
-        <label class="form-label">Address</label>
-        <textarea class="form-control" rows="2" placeholder="Enter address" required></textarea>
-      </div>
-      <div class="mb-3">
-        <label class="form-label">Pin Code</label><br>
-        <input type="text" class="form-control" placeholder="Enter pin code" required>
-      </div>
-      
-      <label class="form-label">All Frames</label><br>
-      <select class="form-select" aria-label="Default select example">
+   <section class="d-flex align-items-center justify-content-center min-vh-100 mt-3">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
         
-  <option selected>Select Frame Names</option>
-  <option value="1">One</option>
-  <option value="2">Two</option>
-  <option value="3">Three</option>
-</select><br>
-      <button type="submit" class="btn btn-dark w-100">Buy Now</button>
-    </form>
-    <div class="alert alert-success text-center success-message">
-      ✅ Order Successfully Placed!
+        <div class="card p-4 bg-black text-white shadow-lg rounded-4">
+          <h3 class="mb-4 text-center">Add Cart</h3>
+          <h5 class="mb-3">Enter Your Details</h5>
+
+          <!-- Checkout Form -->
+          <form id="checkoutForm" novalidate>
+            <div class="mb-3">
+              <label class="form-label">Mobile Number</label>
+              <input type="text" class="form-control" id="mobile" placeholder="Enter mobile number" required pattern="^[0-9]{10}$">
+              <div class="invalid-feedback">Please enter a valid 10-digit mobile number.</div>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter email address" required>
+              <div class="invalid-feedback">Please enter a valid email address.</div>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Address</label>
+              <textarea class="form-control" id="address" rows="2" placeholder="Enter address" required></textarea>
+              <div class="invalid-feedback">Please enter your address.</div>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Pin Code</label>
+              <input type="text" class="form-control" id="pincode" placeholder="Enter pin code" required pattern="^[0-9]{6}$">
+              <div class="invalid-feedback">Please enter a valid 6-digit pin code.</div>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">All Frames</label>
+              <select class="form-select" id="frames" required>
+                <option value="" disabled selected>Select Frame Names</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+              <div class="invalid-feedback">Please select a frame.</div>
+            </div>
+            
+            <button type="submit" class="btn btn-success w-100">Buy Now</button>
+          </form>
+
+          <!-- Success Message -->
+          <div class="alert alert-success text-center success-message mt-3" style="display:none;">
+            ✅ Order Successfully Placed!
+          </div>
+        </div>
+
+      </div>
     </div>
   </div>
-</div>
+</section>
 
 <script>
-  document.getElementById("checkoutForm").addEventListener("submit", function(e){
-    e.preventDefault(); 
-    document.querySelector(".success-message").style.display = "block";
+  const form = document.getElementById("checkoutForm");
+  const successMessage = document.querySelector(".success-message");
+
+  form.addEventListener("submit", function(e) {
+    e.preventDefault();
+    let isValid = true;
+
+    form.querySelectorAll("input, textarea, select").forEach(input => {
+      if (!input.checkValidity()) {
+        input.classList.add("is-invalid");
+        input.classList.remove("is-valid");
+        isValid = false;
+      } else {
+        input.classList.remove("is-invalid");
+        input.classList.add("is-valid");
+      }
+    });
+
+    if (isValid) {
+      successMessage.style.display = "block";
+      form.reset();
+      form.querySelectorAll(".is-valid").forEach(el => el.classList.remove("is-valid"));
+    } else {
+      successMessage.style.display = "none";
+    }
   });
 </script>
-</div>
-        <div class="col-md-6"></div>
-      </div>
-    </div>
-   </section>
-
-    <section>
-  <div class="container ">
-    <div class="row">
-      <div class="col-md3">
-         <nav aria-label="Page navigation example ">
-  <ul class="pagination justify-content-center mt-4">
-    <li class="page-item bg-primary"><a class="page-link" href="contact.html">Previous page</a></li> 
-     <li class="page-item bg-primary"><a class="page-link" href="photo.html">Next page</a></li>   
-      </div>
-      <div class="col-md-3">       
-      </div>
-    </div>
-  </div>
-  </section>
 
   <!-- Footer Start -->
   <footer class="text-white pt-5 pb-5 mt-4 " style="background-color: hsla(197, 22%, 75%, 0.737);">
