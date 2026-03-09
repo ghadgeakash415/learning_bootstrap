@@ -168,100 +168,156 @@
     </section>
   </main>
 
-  <section>
-    <div class="container mt-3">
-      <div class="row">
-        <h1 class="text-center display-5 fw-bold">Our Products</h1>
+  <section class="py-4">
+    <div class="container">
+      <h1 class="text-center display-5 fw-bold section-title">Our Products</h1>
+
+      <div class="row g-4">
+
+        <!-- Product 1 -->
         <div class="col-md-3">
-          <div class="card mt-4">
-            <img src="images/pr1.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">
+          <div class="card">
+            <img src="images/pr1.jpg" class="card-img-top" alt="THE TABLETOP" />
+            <div class="card-body text-center">
               <h3 class="product-title">THE TABLETOP</h3>
-              Photo Size - 5" x 5"<br>
-              Frame Size - 8" x 8"<br>
-               <span class="text-warning fs-5 justify-content-center">★ ★ ★ ★ ☆</span>
-                  <span class="fw-bold ms-2">4.4</span>
+              <p class="card-text mb-2">
+                Photo Size - 5" x 5"<br>
+                Frame Size - 8" x 8"
+              </p>
+              <div class="mb-2">
+                <span class="text-warning fs-5">★ ★ ★ ★ ☆</span>
+                <span class="fw-bold ms-2">4.4</span>
+              </div>
               <div class="text-center">
                 <span class="discount-badge">SAVE 25%</span>
                 <div class="mt-2">
                   <span class="price-new">₹ 1,499.00</span>
-                  <span class="price-old">₹ 1,999.00</span><br>
+                  <span class="price-old">₹ 1,999.00</span>
                 </div>
               </div>
-              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Frame-Work1">
-                More Info
-              </button>
+              <div class="d-flex gap-2 justify-content-center mt-3">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Frame-Work1">
+                  More Info
+                </button>
+                <button type="button" class="btn btn-success order-btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#orderModal"
+                  data-product="THE TABLETOP"
+                  data-price="₹ 1,499.00">
+                  Order Now
+                </button>
+              </div>
             </div>
           </div>
         </div>
+
+        <!-- Product 2 -->
         <div class="col-md-3">
-          <div class="card mt-4">
-            <img src="images/pr2.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">
-                <h3 class="product-title">N-YO-FRAME</h3>
-              Photo Size - 5" x 5"<br>
-              Frame Size - 8" x 8"<br>
-               <span class="text-warning fs-5 justify-content-center">★ ★ ★ ★ ☆</span>
-                  <span class="fw-bold ms-2">4.2</span>
+          <div class="card">
+            <img src="images/pr2.jpg" class="card-img-top" alt="N-YO-FRAME" />
+            <div class="card-body text-center">
+              <h3 class="product-title">N-YO-FRAME</h3>
+              <p class="card-text mb-2">
+                Photo Size - 5" x 5"<br>
+                Frame Size - 8" x 8"
+              </p>
+              <div class="mb-2">
+                <span class="text-warning fs-5">★ ★ ★ ★ ☆</span>
+                <span class="fw-bold ms-2">4.2</span>
+              </div>
               <div class="text-center">
                 <span class="discount-badge">SAVE 25%</span>
                 <div class="mt-2">
                   <span class="price-new">₹ 4,499.25</span>
-                  <span class="price-old">₹ 5,999.00</span><br>
+                  <span class="price-old">₹ 5,999.00</span>
                 </div>
               </div>
-              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Frame-Work2">
-                More Info
-              </button>
+              <div class="d-flex gap-2 justify-content-center mt-3">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Frame-Work2">
+                  More Info
+                </button>
+                <button type="button" class="btn btn-success order-btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#orderModal"
+                  data-product="N-YO-FRAME"
+                  data-price="₹ 4,499.25">
+                  Order Now
+                </button>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-md-3">
-          <div class="card mt-4">
-            <img src="images/pr3.jpg" class="card-img-top" alt="...">
 
-            <div class="card-body">
-              <p class="card-text">
-                <h3 class="product-title">KYOTO FRAME</h3>
-              Photo Size - 5" x 5"<br>
-              Frame Size - 8" x 8"<br>
-               <span class="text-warning fs-5 justify-content-center">★ ★ ★ ★ ☆</span>
-                  <span class="fw-bold ms-2">4.1</span>
+        <!-- Product 3 -->
+        <div class="col-md-3">
+          <div class="card">
+            <img src="images/pr3.jpg" class="card-img-top" alt="KYOTO FRAME" />
+            <div class="card-body text-center">
+              <h3 class="product-title">KYOTO FRAME</h3>
+              <p class="card-text mb-2">
+                Photo Size - 5" x 5"<br>
+                Frame Size - 8" x 8"
+              </p>
+              <div class="mb-2">
+                <span class="text-warning fs-5">★ ★ ★ ★ ☆</span>
+                <span class="fw-bold ms-2">4.1</span>
+              </div>
               <div class="text-center">
                 <span class="discount-badge">SAVE 25%</span>
                 <div class="mt-2">
                   <span class="price-new">₹ 3,340.75</span>
-                  <span class="price-old">₹ 4,321.00</span><br>
+                  <span class="price-old">₹ 4,321.00</span>
                 </div>
               </div>
-              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Frame-Work3">
-                More Info
-              </button>
+              <div class="d-flex gap-2 justify-content-center mt-3">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Frame-Work3">
+                  More Info
+                </button>
+                <button type="button" class="btn btn-success order-btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#orderModal"
+                  data-product="KYOTO FRAME"
+                  data-price="₹ 3,340.75">
+                  Order Now
+                </button>
+              </div>
             </div>
           </div>
         </div>
+
+        <!-- Product 4 -->
         <div class="col-md-3">
-          <div class="card mt-4">
-            <img src="images/pr4.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">
-               <h3 class="product-title">CHI-FRAME</h3>
-              Photo Size - 5" x 5"<br>
-              Frame Size - 8" x 8"<br>
-               <span class="text-warning fs-5 justify-content-center">★ ★ ★ ★ ☆</span>
-                  <span class="fw-bold ms-2">4.3</span>
+          <div class="card">
+            <img src="images/pr4.jpg" class="card-img-top" alt="CHI-FRAME" />
+            <div class="card-body text-center">
+              <h3 class="product-title">CHI-FRAME</h3>
+              <p class="card-text mb-2">
+                Photo Size - 5" x 5"<br>
+                Frame Size - 8" x 8"
+              </p>
+              <div class="mb-2">
+                <span class="text-warning fs-5">★ ★ ★ ★ ☆</span>
+                <span class="fw-bold ms-2">4.3</span>
+              </div>
               <div class="text-center">
                 <span class="discount-badge">SAVE 25%</span>
                 <div class="mt-2">
                   <span class="price-new">₹ 2,737.05</span>
-                  <span class="price-old">₹ 3,650.00</span><br>
+                  <span class="price-old">₹ 3,650.00</span>
                 </div>
               </div>
-              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Frame-Work4">
-                More Info                
-              </button>
+              <div class="d-flex gap-2 justify-content-center mt-3">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Frame-Work4">
+                  More Info
+                </button>
+                <button type="button" class="btn btn-success order-btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#orderModal"
+                  data-product="CHI-FRAME"
+                  data-price="₹ 2,737.05">
+                  Order Now
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -270,334 +326,157 @@
     </div>
   </section>
 
+  <!-- Product Section 2 -->
+  <section class="py-4">
+    <div class="container">
+      <h1 class="text-center display-5 fw-bold section-title">Add More Page</h1>
 
+      <div class="row g-4">
 
-  <!-- model (frame-work models) start-->
-  <div class="modal fade" id="Frame-Work1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-dialog-scrollable">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">MINIMAL METAL FRAME</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-6">
-                <img src="images/nx4.jpg" class="img-fluid" />
-              </div>
-
-              <div class="col-md-6">
-                <p>
-                  God frames are decorative picture frames used to display images or idols of deities. They are designed
-                  to add spiritual significance as well as beauty to homes, offices, and worship places.
-                  God frames are decorative picture frames used to display images or idols of deities. They are designed
-                  to add spiritual significance as well as beauty to homes, offices, and worship places.
-
-                </p>
-
-                <ul>
-                  <li>Wooden Frames Strong, traditional, and elegant.</li>
-                  <li>Metal Frames Durable, long-lasting, often with gold/silver finish.</li>
-                  <li>Fiber/Plastic Frames Lightweight, budget-friendly, with glossy looks.</li>
-                  <li>High-resolution laminated prints for clear detailing.</li>
-                  <li>Photo Frames with printed images.</li>
-                </ul>
-                <div class="row">
-                  <div class="col-md-4">
-                    <img src="images/mo1.jpg" class="img-fluid">
-                  </div>
-                  <div class="col-md-4">
-                    <img src="images/mo2.webp" class="img-fluid">
-                  </div>
-                  <div class="col-md-4">
-                    <img src="images/mo3.webp" class="img-fluid">
-                  </div>
-                </div>
-
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button bg-denger" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- model (frame-work models) End -->
-
-  <!-- second button start -->
-  <div class="modal fade" id="Frame-Work2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-dialog-scrollable">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">MINIMAL METAL FRAME</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-6">
-                <img src="images/nx3.jpg" class="img-fluid" />
-              </div>
-
-              <div class="col-md-6">
-                <p>
-                  God frames are decorative picture frames used to display images or idols of deities. They are designed
-                  to add spiritual significance as well as beauty to homes, offices, and worship places.
-                  God frames are decorative picture frames used to display images or idols of deities. They are designed
-                  to add spiritual significance as well as beauty to homes, offices, and worship places.
-
-                </p>
-
-                <ul>
-                  <li>Wooden Frames Strong, traditional, and elegant.</li>
-                  <li>Metal Frames Durable, long-lasting, often with gold/silver finish.</li>
-                  <li>Fiber/Plastic Frames Lightweight, budget-friendly, with glossy looks.</li>
-                  <li>High-resolution laminated prints for clear detailing.</li>
-                  <li>Photo Frames with printed images.</li>
-                </ul>
-                <div class="row">
-                  <div class="col-md-4">
-                    <img src="images/mo4.webp" class="img-fluid">
-                  </div>
-                  <div class="col-md-4">
-                    <img src="images/mo5.webp" class="img-fluid">
-                  </div>
-                  <div class="col-md-4">
-                    <img src="images/mo6.webp" class="img-fluid">
-                  </div>
-                </div>
-
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button bg-denger" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- second button End -->
-
-  <!-- Third Button Start -->
-
-  <div class="modal fade" id="Frame-Work3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-dialog-scrollable">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">MINIMAL METAL FRAME</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-6">
-                <img src="images/nx2.webp" class="img-fluid" />
-              </div>
-
-              <div class="col-md-6">
-                <p>
-                  God frames are decorative picture frames used to display images or idols of deities. They are designed
-                  to add spiritual significance as well as beauty to homes, offices, and worship places.
-                  God frames are decorative picture frames used to display images or idols of deities. They are designed
-                  to add spiritual significance as well as beauty to homes, offices, and worship places.
-
-                </p>
-
-                <ul>
-                  <li>Wooden Frames Strong, traditional, and elegant.</li>
-                  <li>Metal Frames Durable, long-lasting, often with gold/silver finish.</li>
-                  <li>Fiber/Plastic Frames Lightweight, budget-friendly, with glossy looks.</li>
-                  <li>High-resolution laminated prints for clear detailing.</li>
-                  <li>Photo Frames with printed images.</li>
-                </ul>
-                <div class="row">
-                  <div class="col-md-4">
-                    <img src="images/pr1.jpg" class="img-fluid">
-                  </div>
-                  <div class="col-md-4">
-                    <img src="images/pr2.jpg" class="img-fluid">
-                  </div>
-                  <div class="col-md-4">
-                    <img src="images/pr3.jpg" class="img-fluid">
-                  </div>
-                </div>
-
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button bg-denger" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-
-        </div>
-      </div>
-    </div>
-  </div>
-  
-
-  <!-- Third Button End -->
-
-  <!-- Four Button End -->
-  <div class="modal fade" id="Frame-Work4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-dialog-scrollable">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">MINIMAL METAL FRAME</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-6">
-                <img src="images/nx1.webp" class="img-fluid" />
-              </div>
-
-              <div class="col-md-6">
-                <p>
-                  God frames are decorative picture frames used to display images or idols of deities. They are designed
-                  to add spiritual significance as well as beauty to homes, offices, and worship places.
-                  God frames are decorative picture frames used to display images or idols of deities. They are designed
-                  to add spiritual significance as well as beauty to homes, offices, and worship places.
-
-                </p>
-
-                <ul>
-                  <li>Wooden Frames Strong, traditional, and elegant.</li>
-                  <li>Metal Frames Durable, long-lasting, often with gold/silver finish.</li>
-                  <li>Fiber/Plastic Frames Lightweight, budget-friendly, with glossy looks.</li>
-                  <li>High-resolution laminated prints for clear detailing.</li>
-                  <li>Photo Frames with printed images.</li>
-                </ul>
-                <div class="row">
-                  <div class="col-md-4">
-                    <img src="images/mo1.jpg" class="img-fluid">
-                  </div>
-                  <div class="col-md-4">
-                    <img src="images/mo2.webp" class="img-fluid">
-                  </div>
-                  <div class="col-md-4">
-                    <img src="images/mo3.webp" class="img-fluid">
-                  </div>
-                </div>
-                
-
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button bg-denger" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Four Button End -->
-
-  <!-- second product Start -->
-   <section>
-    <div class="container mt-3">
-      <div class="row">
-        <h1 class="text-center display-5 fw-bold">Add More Page</h1>
+        <!-- Product 5 -->
         <div class="col-md-3">
-          <div class="card mt-4">
-            <img src="images/in13.webp" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">
+          <div class="card">
+            <img src="images/in13.webp" class="card-img-top" alt="DESIGN AR'T GLOWING" />
+            <div class="card-body text-center">
               <h3 class="product-title">DESIGN AR'T GLOWING</h3>
-              Photo Size - 5" x 5"<br>
-              Frame Size - 8" x 8"<br>
-              <span class="text-warning fs-5 justify-content-center">★ ★ ★ ★ ☆</span>
-                  <span class="fw-bold ms-2">4.2</span>
+              <p class="card-text mb-2">
+                Photo Size - 5" x 5"<br>
+                Frame Size - 8" x 8"
+              </p>
+              <div class="mb-2">
+                <span class="text-warning fs-5">★ ★ ★ ★ ☆</span>
+                <span class="fw-bold ms-2">4.2</span>
+              </div>
               <div class="text-center">
                 <span class="discount-badge">SAVE 25%</span>
                 <div class="mt-2">
                   <span class="price-new">₹ 1,499.00</span>
-                  <span class="price-old">₹ 1,999.00</span><br>
+                  <span class="price-old">₹ 1,999.00</span>
                 </div>
               </div>
-              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Frame-Work1">
-                More Info
-              </button>
+              <div class="d-flex gap-2 justify-content-center mt-3">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Frame-Work5">
+                  More Info
+                </button>
+                <button type="button" class="btn btn-success order-btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#orderModal"
+                  data-product="DESIGN AR'T GLOWING"
+                  data-price="₹ 1,499.00">
+                  Order Now
+                </button>
+              </div>
             </div>
           </div>
         </div>
+
+        <!-- Product 6 -->
         <div class="col-md-3">
-          <div class="card mt-4">
-            <img src="images/in11.webp" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">
-                <h3 class="product-title">FIVE PANNER WELL AR'T</h3>
-              Photo Size - 5" x 5"<br>
-              Frame Size - 8" x 8"<br>
-               <span class="text-warning fs-5 justify-content-center">★ ★ ★ ★ ☆</span>
-                  <span class="fw-bold ms-2">4.1</span>
+          <div class="card">
+            <img src="images/in11.webp" class="card-img-top" alt="FIVE PANNER WELL AR'T" />
+            <div class="card-body text-center">
+              <h3 class="product-title">FIVE PANNER WELL AR'T</h3>
+              <p class="card-text mb-2">
+                Photo Size - 5" x 5"<br>
+                Frame Size - 8" x 8"
+              </p>
+              <div class="mb-2">
+                <span class="text-warning fs-5">★ ★ ★ ★ ☆</span>
+                <span class="fw-bold ms-2">4.1</span>
+              </div>
               <div class="text-center">
                 <span class="discount-badge">SAVE 25%</span>
                 <div class="mt-2">
                   <span class="price-new">₹ 4,499.25</span>
-                  <span class="price-old">₹ 5,999.00</span><br>
+                  <span class="price-old">₹ 5,999.00</span>
                 </div>
               </div>
-              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Frame-Work2">
-                More Info
-              </button>
+              <div class="d-flex gap-2 justify-content-center mt-3">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Frame-Work6">
+                  More Info
+                </button>
+                <button type="button" class="btn btn-success order-btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#orderModal"
+                  data-product="FIVE PANNER WELL AR'T"
+                  data-price="₹ 4,499.25">
+                  Order Now
+                </button>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-md-3">
-          <div class="card mt-4">
-            <img src="images/in10.jpg" class="card-img-top" alt="...">
 
-            <div class="card-body">
-              <p class="card-text">
-                <h3 class="product-title">ABSTRACT FRACTAL</h3>
-              Photo Size - 5" x 5"<br>
-              Frame Size - 8" x 8"<br>
-               <span class="text-warning fs-5 justify-content-center">★ ★ ★ ★ ☆</span>
-                  <span class="fw-bold ms-2">4.4</span>
+        <!-- Product 7 -->
+        <div class="col-md-3">
+          <div class="card">
+            <img src="images/in10.jpg" class="card-img-top" alt="ABSTRACT FRACTAL" />
+            <div class="card-body text-center">
+              <h3 class="product-title">ABSTRACT FRACTAL</h3>
+              <p class="card-text mb-2">
+                Photo Size - 5" x 5"<br>
+                Frame Size - 8" x 8"
+              </p>
+              <div class="mb-2">
+                <span class="text-warning fs-5">★ ★ ★ ★ ☆</span>
+                <span class="fw-bold ms-2">4.4</span>
+              </div>
               <div class="text-center">
                 <span class="discount-badge">SAVE 25%</span>
                 <div class="mt-2">
                   <span class="price-new">₹ 3,340.75</span>
-                  <span class="price-old">₹ 4,321.00</span><br>
+                  <span class="price-old">₹ 4,321.00</span>
                 </div>
               </div>
-              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Frame-Work3">
-                More Info
-              </button>
+              <div class="d-flex gap-2 justify-content-center mt-3">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Frame-Work7">
+                  More Info
+                </button>
+                <button type="button" class="btn btn-success order-btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#orderModal"
+                  data-product="ABSTRACT FRACTAL"
+                  data-price="₹ 3,340.75">
+                  Order Now
+                </button>
+              </div>
             </div>
           </div>
         </div>
+
+        <!-- Product 8 -->
         <div class="col-md-3">
-          <div class="card mt-4">
-            <img src="images/in5.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">
-               <h3 class="product-title">3D ACRTLIC STICKER TREE</h3>
-              Photo Size - 5" x 5"<br>
-              Frame Size - 8" x 8"<br>
-               <span class="text-warning fs-5 justify-content-center">★ ★ ★ ★ ☆</span>
-                  <span class="fw-bold ms-2">4.0</span>
+          <div class="card">
+            <img src="images/in5.jpg" class="card-img-top" alt="3D ACRTLIC STICKER TREE" />
+            <div class="card-body text-center">
+              <h3 class="product-title">3D ACRTLIC STICKER TREE</h3>
+              <p class="card-text mb-2">
+                Photo Size - 5" x 5"<br>
+                Frame Size - 8" x 8"
+              </p>
+              <div class="mb-2">
+                <span class="text-warning fs-5">★ ★ ★ ★ ☆</span>
+                <span class="fw-bold ms-2">4.0</span>
+              </div>
               <div class="text-center">
                 <span class="discount-badge">SAVE 25%</span>
                 <div class="mt-2">
                   <span class="price-new">₹ 2,737.05</span>
-                  <span class="price-old">₹ 3,650.00</span><br>
+                  <span class="price-old">₹ 3,650.00</span>
                 </div>
               </div>
-              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Frame-Work4">
-                More Info                
-              </button>
+              <div class="d-flex gap-2 justify-content-center mt-3">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Frame-Work8">
+                  More Info
+                </button>
+                <button type="button" class="btn btn-success order-btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#orderModal"
+                  data-product="3D ACRTLIC STICKER TREE"
+                  data-price="₹ 2,737.05">
+                  Order Now
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -606,93 +485,384 @@
     </div>
   </section>
 
+  <!-- More Info Modals -->
 
-  <!-- Card Buttons Start -->
-
-   <section class="d-flex align-items-center justify-content-center min-vh-100 mt-3">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-md-6">
-        
-        <div class="card p-4 bg-black text-white shadow-lg rounded-4">
-          <h3 class="mb-4 text-center">Add Cart</h3>
-          <h5 class="mb-3">Enter Your Details</h5>
-
-          <!-- Checkout Form -->
-          <form id="checkoutForm" novalidate>
-            <div class="mb-3">
-              <label class="form-label">Mobile Number</label>
-              <input type="text" class="form-control" id="mobile" placeholder="Enter mobile number" required pattern="^[0-9]{10}$">
-              <div class="invalid-feedback">Please enter a valid 10-digit mobile number.</div>
+  <!-- Modal 1 -->
+  <div class="modal fade" id="Frame-Work1" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header bg-primary text-white">
+          <h5 class="modal-title">THE TABLETOP</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row g-3">
+            <div class="col-md-6">
+              <img src="images/nx4.jpg" class="img-fluid rounded" alt="">
             </div>
-            <div class="mb-3">
-              <label class="form-label">Email</label>
-              <input type="email" class="form-control" id="email" placeholder="Enter email address" required>
-              <div class="invalid-feedback">Please enter a valid email address.</div>
+            <div class="col-md-6">
+              <p>
+                Premium tabletop frame with stylish finish. Perfect for home decor, office table, and gifts.
+              </p>
+              <ul>
+                <li>Strong build quality</li>
+                <li>Elegant frame finish</li>
+                <li>High quality print support</li>
+                <li>Perfect for personal photos</li>
+                <li>Easy to place anywhere</li>
+              </ul>
+              <div class="row g-2">
+                <div class="col-4"><img src="images/mo1.jpg" class="gallery-thumb" alt=""></div>
+                <div class="col-4"><img src="images/mo2.webp" class="gallery-thumb" alt=""></div>
+                <div class="col-4"><img src="images/mo3.webp" class="gallery-thumb" alt=""></div>
+              </div>
             </div>
-            <div class="mb-3">
-              <label class="form-label">Address</label>
-              <textarea class="form-control" id="address" rows="2" placeholder="Enter address" required></textarea>
-              <div class="invalid-feedback">Please enter your address.</div>
-            </div>
-            <div class="mb-3">
-              <label class="form-label">Pin Code</label>
-              <input type="text" class="form-control" id="pincode" placeholder="Enter pin code" required pattern="^[0-9]{6}$">
-              <div class="invalid-feedback">Please enter a valid 6-digit pin code.</div>
-            </div>
-            <div class="mb-3">
-              <label class="form-label">All Frames</label>
-              <select class="form-select" id="frames" required>
-                <option value="" disabled selected>Select Frame Names</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-              </select>
-              <div class="invalid-feedback">Please select a frame.</div>
-            </div>
-            
-            <button type="submit" class="btn btn-success w-100">Buy Now</button>
-          </form>
-
-          <!-- Success Message -->
-          <div class="alert alert-success text-center success-message mt-3" style="display:none;">
-            ✅ Order Successfully Placed!
           </div>
         </div>
-
+        <div class="modal-footer">
+          <button class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+        </div>
       </div>
     </div>
   </div>
-</section>
 
-<script>
-  const form = document.getElementById("checkoutForm");
-  const successMessage = document.querySelector(".success-message");
+  <!-- Modal 2 -->
+  <div class="modal fade" id="Frame-Work2" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header bg-primary text-white">
+          <h5 class="modal-title">N-YO-FRAME</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row g-3">
+            <div class="col-md-6">
+              <img src="images/nx3.jpg" class="img-fluid rounded" alt="">
+            </div>
+            <div class="col-md-6">
+              <p>
+                Modern decorative frame with rich look and premium design for special memories.
+              </p>
+              <ul>
+                <li>Luxury frame style</li>
+                <li>Durable material</li>
+                <li>Ideal for gifting</li>
+                <li>Attractive wall display</li>
+                <li>Long-lasting quality</li>
+              </ul>
+              <div class="row g-2">
+                <div class="col-4"><img src="images/mo4.webp" class="gallery-thumb" alt=""></div>
+                <div class="col-4"><img src="images/mo5.webp" class="gallery-thumb" alt=""></div>
+                <div class="col-4"><img src="images/mo6.webp" class="gallery-thumb" alt=""></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
-  form.addEventListener("submit", function(e) {
-    e.preventDefault();
-    let isValid = true;
+  <!-- Modal 3 -->
+  <div class="modal fade" id="Frame-Work3" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header bg-primary text-white">
+          <h5 class="modal-title">KYOTO FRAME</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row g-3">
+            <div class="col-md-6">
+              <img src="images/nx2.webp" class="img-fluid rounded" alt="">
+            </div>
+            <div class="col-md-6">
+              <p>
+                Stylish Kyoto frame designed for premium look and elegant photo presentation.
+              </p>
+              <ul>
+                <li>Beautiful finishing</li>
+                <li>Elegant premium style</li>
+                <li>Good for wall decor</li>
+                <li>Sharp display view</li>
+                <li>Ideal for family photos</li>
+              </ul>
+              <div class="row g-2">
+                <div class="col-4"><img src="images/pr1.jpg" class="gallery-thumb" alt=""></div>
+                <div class="col-4"><img src="images/pr2.jpg" class="gallery-thumb" alt=""></div>
+                <div class="col-4"><img src="images/pr3.jpg" class="gallery-thumb" alt=""></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    form.querySelectorAll("input, textarea, select").forEach(input => {
-      if (!input.checkValidity()) {
-        input.classList.add("is-invalid");
-        input.classList.remove("is-valid");
-        isValid = false;
-      } else {
-        input.classList.remove("is-invalid");
-        input.classList.add("is-valid");
-      }
+  <!-- Modal 4 -->
+  <div class="modal fade" id="Frame-Work4" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header bg-primary text-white">
+          <h5 class="modal-title">CHI-FRAME</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row g-3">
+            <div class="col-md-6">
+              <img src="images/nx1.webp" class="img-fluid rounded" alt="">
+            </div>
+            <div class="col-md-6">
+              <p>
+                Elegant Chi-frame with a smart look, suitable for bedroom, living room, and office decoration.
+              </p>
+              <ul>
+                <li>Strong and stylish</li>
+                <li>Attractive finishing</li>
+                <li>Premium display quality</li>
+                <li>Gift-friendly design</li>
+                <li>Good for all occasions</li>
+              </ul>
+              <div class="row g-2">
+                <div class="col-4"><img src="images/mo1.jpg" class="gallery-thumb" alt=""></div>
+                <div class="col-4"><img src="images/mo2.webp" class="gallery-thumb" alt=""></div>
+                <div class="col-4"><img src="images/mo3.webp" class="gallery-thumb" alt=""></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 5 -->
+  <div class="modal fade" id="Frame-Work5" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header bg-primary text-white">
+          <h5 class="modal-title">DESIGN AR'T GLOWING</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <img src="images/in13.webp" class="img-fluid rounded mb-3" alt="">
+          <p>
+            Decorative glowing art frame with modern finish. A great choice for creative decoration.
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 6 -->
+  <div class="modal fade" id="Frame-Work6" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header bg-primary text-white">
+          <h5 class="modal-title">FIVE PANNER WELL AR'T</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <img src="images/in11.webp" class="img-fluid rounded mb-3" alt="">
+          <p>
+            Five panel art frame designed for bigger wall decoration and rich home interior styling.
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 7 -->
+  <div class="modal fade" id="Frame-Work7" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header bg-primary text-white">
+          <h5 class="modal-title">ABSTRACT FRACTAL</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <img src="images/in10.jpg" class="img-fluid rounded mb-3" alt="">
+          <p>
+            Abstract fractal artwork with modern design and a bold premium decorative look.
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 8 -->
+  <div class="modal fade" id="Frame-Work8" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header bg-primary text-white">
+          <h5 class="modal-title">3D ACRTLIC STICKER TREE</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <img src="images/in5.jpg" class="img-fluid rounded mb-3" alt="">
+          <p>
+            3D acrylic sticker tree frame with unique design and attractive artistic finish.
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Common Order Modal -->
+  <div class="modal fade" id="orderModal" tabindex="-1" aria-labelledby="orderModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header bg-success text-white">
+          <h5 class="modal-title" id="orderModalLabel">Place Your Order</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+
+        <div class="modal-body">
+          <div id="successMessage" class="alert alert-success d-none text-center fw-bold">
+            Thank you! Your order was placed successfully.
+          </div>
+
+          <form id="orderForm">
+            <div class="row g-3">
+
+              <div class="col-md-6">
+                <label class="form-label fw-bold">Product Name</label>
+                <input type="text" class="form-control" id="productName" readonly>
+              </div>
+
+              <div class="col-md-6">
+                <label class="form-label fw-bold">Product Price</label>
+                <input type="text" class="form-control" id="productPrice" readonly>
+              </div>
+
+              <div class="col-md-6">
+                <label class="form-label fw-bold">Select Frame</label>
+                <select class="form-select" id="frameType" required>
+                  <option value="">Choose Frame</option>
+                  <option>Wooden Frame</option>
+                  <option>Black Frame</option>
+                  <option>White Frame</option>
+                  <option>Acrylic Frame</option>
+                  <option>Metal Frame</option>
+                </select>
+              </div>
+
+              <div class="col-md-6">
+                <label class="form-label fw-bold">Price Range</label>
+                <select class="form-select" id="priceRange" required>
+                  <option value="">Choose Price Range</option>
+                  <option>₹1000 - ₹2000</option>
+                  <option>₹2000 - ₹3000</option>
+                  <option>₹3000 - ₹4000</option>
+                  <option>₹4000 - ₹5000</option>
+                  <option>₹5000+</option>
+                </select>
+              </div>
+
+              <div class="col-md-6">
+                <label class="form-label fw-bold">Customer Name</label>
+                <input type="text" class="form-control" id="customerName" placeholder="Enter your name" required>
+              </div>
+
+              <div class="col-md-6">
+                <label class="form-label fw-bold">Mobile Number</label>
+                <input type="tel" class="form-control" id="mobileNumber" placeholder="Enter 10-digit mobile number" pattern="[0-9]{10}" maxlength="10" required>
+              </div>
+
+              <div class="col-md-6">
+                <label class="form-label fw-bold">Pincode</label>
+                <input type="text" class="form-control" id="pincode" placeholder="Enter 6-digit pincode" pattern="[0-9]{6}" maxlength="6" required>
+              </div>
+
+              <div class="col-md-6">
+                <label class="form-label fw-bold">Address</label>
+                <textarea class="form-control" id="address" rows="2" placeholder="Enter full address" required></textarea>
+              </div>
+
+              <div class="col-12">
+                <div class="order-summary-box">
+                  <h6 class="fw-bold mb-2">Order Summary</h6>
+                  <p class="mb-1"><strong>Product:</strong> <span id="summaryProduct">-</span></p>
+                  <p class="mb-0"><strong>Price:</strong> <span id="summaryPrice">-</span></p>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="text-center mt-4">
+              <button type="submit" class="btn btn-success px-5">Final Order Now</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    const orderButtons = document.querySelectorAll(".order-btn");
+    const productNameInput = document.getElementById("productName");
+    const productPriceInput = document.getElementById("productPrice");
+    const summaryProduct = document.getElementById("summaryProduct");
+    const summaryPrice = document.getElementById("summaryPrice");
+    const orderForm = document.getElementById("orderForm");
+    const successMessage = document.getElementById("successMessage");
+
+    orderButtons.forEach(button => {
+      button.addEventListener("click", function () {
+        const product = this.getAttribute("data-product");
+        const price = this.getAttribute("data-price");
+
+        orderForm.reset();
+        successMessage.classList.add("d-none");
+
+        productNameInput.value = product;
+        productPriceInput.value = price;
+        summaryProduct.textContent = product;
+        summaryPrice.textContent = price;
+      });
     });
 
-    if (isValid) {
-      successMessage.style.display = "block";
-      form.reset();
-      form.querySelectorAll(".is-valid").forEach(el => el.classList.remove("is-valid"));
-    } else {
-      successMessage.style.display = "none";
-    }
-  });
-</script>
+    orderForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      successMessage.classList.remove("d-none");
+
+      setTimeout(() => {
+        const modalElement = document.getElementById("orderModal");
+        const modalInstance = bootstrap.Modal.getInstance(modalElement);
+        modalInstance.hide();
+
+        orderForm.reset();
+        successMessage.classList.add("d-none");
+        productNameInput.value = "";
+        productPriceInput.value = "";
+        summaryProduct.textContent = "-";
+        summaryPrice.textContent = "-";
+      }, 2000);
+    });
+  </script>
 
 
 <section>
