@@ -4,26 +4,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Product - EliteEdge Framing</title>
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-  <!-- Bootstrap Icons CDN -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
   <style>
     .link-success-hover:hover {
       color: black !important;
-      /* Bootstrap green */
     }
 
     .nav-item:hover {
       background-color: black;
       height: 2px;
     }
-
 
     .product-title {
       font-size: 1.5rem;
@@ -52,42 +48,52 @@
       border-radius: 3px;
       font-weight: bold;
     }
-     .success-message {
+
+    .success-message {
       display: none;
       margin-top: 20px;
+    }
+
+    .gallery-thumb {
+      width: 100%;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 6px;
     }
   </style>
 </head>
 
 <body>
-   <!-- top bar pages Strat --> 
-    <div class="top-bar text-black py-3">
-      <div class="container d-flex justify-content-between align-items-center">
-        <div>
-          <i class="bi bi-telephone me-2"></i> +91 87345 67890
-          <span class="ms-4"><i class="bi bi-envelope me-2"></i>
-            info@eliteedgeframing.com</span>
-        </div>
-        <div>
-          <span class="me-2">Follow Us:</span>
-         <a href="https://www.twitter.com" class="text-black me-3"><i class="bi bi-twitter"></i></a>
-          <a href="https://facebook.com" class="text-black me-3"><i class="bi bi-facebook"></i></a>
-          <a href="https://youtube.com" class="text-black me-3"><i class="bi bi-youtube"></i></a>
-          <a href="https://instagram.com" class="text-black"><i class="bi bi-instagram"></i></a>
-        </div>
+  <!-- Top Bar Start -->
+  <div class="top-bar text-black py-3">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div>
+        <i class="bi bi-telephone me-2"></i> +91 87345 67890
+        <span class="ms-4"><i class="bi bi-envelope me-2"></i> info@eliteedgeframing.com</span>
+      </div>
+      <div>
+        <span class="me-2">Follow Us:</span>
+        <a href="https://www.twitter.com" class="text-black me-3"><i class="bi bi-twitter"></i></a>
+        <a href="https://facebook.com" class="text-black me-3"><i class="bi bi-facebook"></i></a>
+        <a href="https://youtube.com" class="text-black me-3"><i class="bi bi-youtube"></i></a>
+        <a href="https://instagram.com" class="text-black"><i class="bi bi-instagram"></i></a>
       </div>
     </div>
-    <!-- top bar pages End--> 
-    <header class="sticky-top">
+  </div>
+  <!-- Top Bar End -->
+
+  <header class="sticky-top">
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
-        <a class="navbar-brand fw-bold fs-1 text-success col-md-1"
-            href="index.html"><img src="images/logo2.png" class="img-fluid" alt=""></a>
+        <a class="navbar-brand fw-bold fs-1 text-success col-md-1" href="index.html">
+          <img src="images/logo2.png" class="img-fluid" alt="Logo">
+        </a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
+
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
@@ -100,21 +106,20 @@
               <a class="nav-link" href="service.html">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link " href="contact.html">Contact</a>
+              <a class="nav-link" href="contact.html">Contact</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="product.html">Product</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+              <a class="nav-link dropdown-toggle" href="photo.html" role="button" data-bs-toggle="dropdown"
                 aria-expanded="false">
-                Gallary
+                Gallery
               </a>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="photo.html">Photo</a></li>
                 <li><a class="dropdown-item" href="video.html">Videos</a></li>
-                 <li><a class="dropdown-item" href="feedback.html">Feedback Form</a></li>
-
+                <li><a class="dropdown-item" href="feedback.html">Feedback Form</a></li>
               </ul>
             </li>
           </ul>
@@ -131,21 +136,16 @@
             <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
               <div class="carousel-inner">
                 <div class="carousel-item" data-bs-interval="1500">
-                  <img src="images/bnners8.webp" class="d-block w-100" alt="...">
-                  <div class="carousel-caption d-none d-md-block">
-
-                  </div>
+                  <img src="images/bnners8.webp" class="d-block w-100" alt="Banner 1">
+                  <div class="carousel-caption d-none d-md-block"></div>
                 </div>
                 <div class="carousel-item" data-bs-interval="1500">
-                  <img src="images/bnners2.webp" class="d-block w-100" alt="...">
-                  <div class="carousel-caption d-none d-md-block">
-                  </div>
+                  <img src="images/bnners2.webp" class="d-block w-100" alt="Banner 2">
+                  <div class="carousel-caption d-none d-md-block"></div>
                 </div>
                 <div class="carousel-item active" data-bs-interval="1500">
-                  <img src="images/bnners4.webp" class="d-block w-100" alt="...">
-                  <div class="carousel-caption d-none d-md-block">
-
-                  </div>
+                  <img src="images/bnners4.webp" class="d-block w-100" alt="Banner 3">
+                  <div class="carousel-caption d-none d-md-block"></div>
                 </div>
               </div>
               <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
@@ -159,12 +159,9 @@
                 <span class="visually-hidden">Next</span>
               </button>
             </div>
-
-
           </div>
         </div>
       </div>
-
     </section>
   </main>
 
@@ -174,7 +171,6 @@
 
       <div class="row g-4">
 
-        <!-- Product 1 -->
         <div class="col-md-3">
           <div class="card">
             <img src="images/pr1.jpg" class="card-img-top" alt="THE TABLETOP" />
@@ -211,7 +207,6 @@
           </div>
         </div>
 
-        <!-- Product 2 -->
         <div class="col-md-3">
           <div class="card">
             <img src="images/pr2.jpg" class="card-img-top" alt="N-YO-FRAME" />
@@ -248,7 +243,6 @@
           </div>
         </div>
 
-        <!-- Product 3 -->
         <div class="col-md-3">
           <div class="card">
             <img src="images/pr3.jpg" class="card-img-top" alt="KYOTO FRAME" />
@@ -285,7 +279,6 @@
           </div>
         </div>
 
-        <!-- Product 4 -->
         <div class="col-md-3">
           <div class="card">
             <img src="images/pr4.jpg" class="card-img-top" alt="CHI-FRAME" />
@@ -326,14 +319,12 @@
     </div>
   </section>
 
-  <!-- Product Section 2 -->
   <section class="py-4">
     <div class="container">
       <h1 class="text-center display-5 fw-bold section-title">Add More Page</h1>
 
       <div class="row g-4">
 
-        <!-- Product 5 -->
         <div class="col-md-3">
           <div class="card">
             <img src="images/in13.webp" class="card-img-top" alt="DESIGN AR'T GLOWING" />
@@ -370,7 +361,6 @@
           </div>
         </div>
 
-        <!-- Product 6 -->
         <div class="col-md-3">
           <div class="card">
             <img src="images/in11.webp" class="card-img-top" alt="FIVE PANNER WELL AR'T" />
@@ -407,7 +397,6 @@
           </div>
         </div>
 
-        <!-- Product 7 -->
         <div class="col-md-3">
           <div class="card">
             <img src="images/in10.jpg" class="card-img-top" alt="ABSTRACT FRACTAL" />
@@ -444,7 +433,6 @@
           </div>
         </div>
 
-        <!-- Product 8 -->
         <div class="col-md-3">
           <div class="card">
             <img src="images/in5.jpg" class="card-img-top" alt="3D ACRTLIC STICKER TREE" />
@@ -485,8 +473,6 @@
     </div>
   </section>
 
-  <!-- More Info Modals -->
-
   <!-- Modal 1 -->
   <div class="modal fade" id="Frame-Work1" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-scrollable">
@@ -501,9 +487,7 @@
               <img src="images/nx4.jpg" class="img-fluid rounded" alt="">
             </div>
             <div class="col-md-6">
-              <p>
-                Premium tabletop frame with stylish finish. Perfect for home decor, office table, and gifts.
-              </p>
+              <p>Premium tabletop frame with stylish finish. Perfect for home decor, office table, and gifts.</p>
               <ul>
                 <li>Strong build quality</li>
                 <li>Elegant frame finish</li>
@@ -540,9 +524,7 @@
               <img src="images/nx3.jpg" class="img-fluid rounded" alt="">
             </div>
             <div class="col-md-6">
-              <p>
-                Modern decorative frame with rich look and premium design for special memories.
-              </p>
+              <p>Modern decorative frame with rich look and premium design for special memories.</p>
               <ul>
                 <li>Luxury frame style</li>
                 <li>Durable material</li>
@@ -579,9 +561,7 @@
               <img src="images/nx2.webp" class="img-fluid rounded" alt="">
             </div>
             <div class="col-md-6">
-              <p>
-                Stylish Kyoto frame designed for premium look and elegant photo presentation.
-              </p>
+              <p>Stylish Kyoto frame designed for premium look and elegant photo presentation.</p>
               <ul>
                 <li>Beautiful finishing</li>
                 <li>Elegant premium style</li>
@@ -618,9 +598,7 @@
               <img src="images/nx1.webp" class="img-fluid rounded" alt="">
             </div>
             <div class="col-md-6">
-              <p>
-                Elegant Chi-frame with a smart look, suitable for bedroom, living room, and office decoration.
-              </p>
+              <p>Elegant Chi-frame with a smart look, suitable for bedroom, living room, and office decoration.</p>
               <ul>
                 <li>Strong and stylish</li>
                 <li>Attractive finishing</li>
@@ -653,9 +631,7 @@
         </div>
         <div class="modal-body">
           <img src="images/in13.webp" class="img-fluid rounded mb-3" alt="">
-          <p>
-            Decorative glowing art frame with modern finish. A great choice for creative decoration.
-          </p>
+          <p>Decorative glowing art frame with modern finish. A great choice for creative decoration.</p>
         </div>
         <div class="modal-footer">
           <button class="btn btn-danger" data-bs-dismiss="modal">Close</button>
@@ -674,9 +650,7 @@
         </div>
         <div class="modal-body">
           <img src="images/in11.webp" class="img-fluid rounded mb-3" alt="">
-          <p>
-            Five panel art frame designed for bigger wall decoration and rich home interior styling.
-          </p>
+          <p>Five panel art frame designed for bigger wall decoration and rich home interior styling.</p>
         </div>
         <div class="modal-footer">
           <button class="btn btn-danger" data-bs-dismiss="modal">Close</button>
@@ -695,9 +669,7 @@
         </div>
         <div class="modal-body">
           <img src="images/in10.jpg" class="img-fluid rounded mb-3" alt="">
-          <p>
-            Abstract fractal artwork with modern design and a bold premium decorative look.
-          </p>
+          <p>Abstract fractal artwork with modern design and a bold premium decorative look.</p>
         </div>
         <div class="modal-footer">
           <button class="btn btn-danger" data-bs-dismiss="modal">Close</button>
@@ -716,9 +688,7 @@
         </div>
         <div class="modal-body">
           <img src="images/in5.jpg" class="img-fluid rounded mb-3" alt="">
-          <p>
-            3D acrylic sticker tree frame with unique design and attractive artistic finish.
-          </p>
+          <p>3D acrylic sticker tree frame with unique design and attractive artistic finish.</p>
         </div>
         <div class="modal-footer">
           <button class="btn btn-danger" data-bs-dismiss="modal">Close</button>
@@ -817,229 +787,202 @@
     </div>
   </div>
 
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-<script>
-  const orderButtons = document.querySelectorAll(".order-btn");
-  const productNameInput = document.getElementById("productName");
-  const productPriceInput = document.getElementById("productPrice");
-  const summaryProduct = document.getElementById("summaryProduct");
-  const summaryPrice = document.getElementById("summaryPrice");
-  const orderForm = document.getElementById("orderForm");
-  const successMessage = document.getElementById("successMessage");
-
-  const customerName = document.getElementById("customerName");
-  const mobileNumber = document.getElementById("mobileNumber");
-  const address = document.getElementById("address");
-  const pincode = document.getElementById("pincode");
-  const frameType = document.getElementById("frameType");
-  const priceRange = document.getElementById("priceRange");
-
-  orderButtons.forEach(button => {
-    button.addEventListener("click", function () {
-      const product = this.getAttribute("data-product");
-      const price = this.getAttribute("data-price");
-
-      orderForm.reset();
-      successMessage.classList.add("d-none");
-
-      document.querySelectorAll(".is-invalid, .is-valid").forEach(field => {
-        field.classList.remove("is-invalid", "is-valid");
-      });
-
-      productNameInput.value = product;
-      productPriceInput.value = price;
-      summaryProduct.textContent = product;
-      summaryPrice.textContent = price;
-    });
-  });
-
-  orderForm.addEventListener("submit", function (e) {
-    e.preventDefault();
-
-    let isValid = true;
-
-    // Name validation
-    if (customerName.value.trim() === "") {
-      customerName.classList.add("is-invalid");
-      customerName.classList.remove("is-valid");
-      isValid = false;
-    } else {
-      customerName.classList.remove("is-invalid");
-      customerName.classList.add("is-valid");
-    }
-
-    // Mobile validation (10 digits)
-    if (!/^[0-9]{10}$/.test(mobileNumber.value.trim())) {
-      mobileNumber.classList.add("is-invalid");
-      mobileNumber.classList.remove("is-valid");
-      isValid = false;
-    } else {
-      mobileNumber.classList.remove("is-invalid");
-      mobileNumber.classList.add("is-valid");
-    }
-
-    // Address validation
-    if (address.value.trim() === "") {
-      address.classList.add("is-invalid");
-      address.classList.remove("is-valid");
-      isValid = false;
-    } else {
-      address.classList.remove("is-invalid");
-      address.classList.add("is-valid");
-    }
-
-    // Pincode validation (6 digits)
-    if (!/^[0-9]{6}$/.test(pincode.value.trim())) {
-      pincode.classList.add("is-invalid");
-      pincode.classList.remove("is-valid");
-      isValid = false;
-    } else {
-      pincode.classList.remove("is-invalid");
-      pincode.classList.add("is-valid");
-    }
-
-    // Frame type validation
-    if (frameType.value === "") {
-      frameType.classList.add("is-invalid");
-      frameType.classList.remove("is-valid");
-      isValid = false;
-    } else {
-      frameType.classList.remove("is-invalid");
-      frameType.classList.add("is-valid");
-    }
-
-    // Price range validation
-    if (priceRange.value === "") {
-      priceRange.classList.add("is-invalid");
-      priceRange.classList.remove("is-valid");
-      isValid = false;
-    } else {
-      priceRange.classList.remove("is-invalid");
-      priceRange.classList.add("is-valid");
-    }
-
-    // Product check
-    if (productNameInput.value.trim() === "" || productPriceInput.value.trim() === "") {
-      isValid = false;
-    }
-
-    if (isValid) {
-      successMessage.innerHTML = "✅ Order placed successfully!";
-      successMessage.classList.remove("d-none");
-
-      setTimeout(() => {
-        const modalElement = document.getElementById("orderModal");
-        const modalInstance = bootstrap.Modal.getInstance(modalElement);
-        modalInstance.hide();
-
-        orderForm.reset();
-        successMessage.classList.add("d-none");
-        productNameInput.value = "";
-        productPriceInput.value = "";
-        summaryProduct.textContent = "-";
-        summaryPrice.textContent = "-";
-
-        document.querySelectorAll(".is-invalid, .is-valid").forEach(field => {
-          field.classList.remove("is-invalid", "is-valid");
-        });
-      }, 2000);
-    } else {
-      successMessage.classList.add("d-none");
-    }
-  });
-</script>
-
-<section>
-  <div class="container ">
-    <div class="row">
-      <div class="col-md3">
-         <nav aria-label="Page navigation example ">
-  <ul class="pagination justify-content-center mt-4">
-    <li class="page-item bg-primary"><a class="page-link" href="contact.html">Previous page</a></li> 
-     <li class="page-item bg-primary"><a class="page-link" href="photo.html">Next page</a></li>   
-      </div>
-      <div class="col-md-3">       
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center mt-4">
+              <li class="page-item"><a class="page-link" href="contact.html">Previous page</a></li>
+              <li class="page-item"><a class="page-link" href="photo.html">Next page</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </div>
-  </div>
   </section>
 
-
   <!-- Footer Start -->
-  <footer class="text-white pt-5 pb-5 mt-4 " style="background-color: hsla(197, 22%, 75%, 0.737);">
+  <footer class="text-white pt-5 pb-5 mt-4" style="background-color: hsla(197, 22%, 75%, 0.737);">
     <div class="container mt-5 mb-5 text-black">
       <div class="row mt-3">
 
-        <!-- Our Office -->
-        <div class="col-md-4 mb-4 ">
+        <div class="col-md-4 mb-4">
           <h5 class="fw-bold mb-4">Our Office</h5>
-          <p><i class="fa fa-map-marker-alt me-2"></i>125 Chinchwad, Pune,
-            India</p>
+          <p><i class="fa fa-map-marker-alt me-2"></i>125 Chinchwad, Pune, India</p>
           <p><i class="fa fa-phone-alt me-2"></i>+91 9356977531</p>
           <p><i class="fa fa-envelope me-2"></i>info@eliteedgeframing.com</p>
           <div class="d-flex gap-2">
-            <a href="https://www.twitter.com" class="btn btn-outline-light btn-sm rounded-circle text-black"><i
-                class="fab fa-twitter"></i></a>
-            <a href="https://www.facebook.com" class="btn btn-outline-light btn-sm rounded-circle text-black"><i
-                class="fab fa-facebook-f"></i></a>
-            <a href="https://www.youtube.com/" class="btn btn-outline-light btn-sm rounded-circle text-black"><i
-                class="fab fa-youtube"></i></a>
-            <a href="https://www.in-linkedin.com3" class="btn btn-outline-light btn-sm rounded-circle text-black"><i
-                class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.twitter.com" class="btn btn-outline-light btn-sm rounded-circle text-black"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.facebook.com" class="btn btn-outline-light btn-sm rounded-circle text-black"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.youtube.com/" class="btn btn-outline-light btn-sm rounded-circle text-black"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.linkedin.com/" class="btn btn-outline-light btn-sm rounded-circle text-black"><i class="fab fa-linkedin-in"></i></a>
           </div>
         </div>
 
-        <!-- Services -->
         <div class="col-md-4 mb-4">
           <h5 class="fw-bold mb-4">Services</h5>
           <ul class="list-unstyled">
-            <li> <a href="#" class="text-black text-decoration-none">✔ High Quality Frames</a></li>
-            <li> <a href="#" class="text-black text-decoration-none">✔ Custom Frame Designs
-                Plants</a></li>
-            <li> <a href="#" class="text-black text-decoration-none">✔ Affordable Pricing</a></li>
-            <li> <a href="#" class="text-black text-decoration-none">✔ Fast & Reliable Service
-                Maintenance</a></li>
-            <li> <a href="#" class="text-black text-decoration-none">✔ 100% Customer Satisfaction</a></li>
-
+            <li><a href="#" class="text-black text-decoration-none">✔ High Quality Frames</a></li>
+            <li><a href="#" class="text-black text-decoration-none">✔ Custom Frame Designs</a></li>
+            <li><a href="#" class="text-black text-decoration-none">✔ Affordable Pricing</a></li>
+            <li><a href="#" class="text-black text-decoration-none">✔ Fast & Reliable Service</a></li>
+            <li><a href="#" class="text-black text-decoration-none">✔ 100% Customer Satisfaction</a></li>
           </ul>
         </div>
 
-        <!-- Quick Links -->
         <div class="col-md-4 mb-4">
           <h5 class="fw-bold mb-4">Quick Links</h5>
           <ul class="list-unstyled">
-            <li> <a href="index.html" class="text-black text-decoration-none">✔ Home</a></li>
-            <li> <a href="about.html" class="text-black text-decoration-none">✔ About Us</a></li>
-            <li> <a href="service.html" class="text-black text-decoration-none">✔ Services</a></li>
-            <li> <a href="product.html" class="text-black text-decoration-none">✔ Product</a></li>
-            <li> <a href="contact.html" class="text-black text-decoration-none">✔ Contact</a></li>
-            <li> <a href="photo.html" class="text-black text-decoration-none">✔ Gallary</a></li>
-            <li> <a href="photo.html" class="text-black text-decoration-none">✔ Photo</a></li>
-            <li> <a href="video.html" class="text-black text-decoration-none">✔ Video</a></li>
-            <li> <a href="feedback.html" class="text-black text-decoration-none">✔ Feedback Form</a></li>
+            <li><a href="index.html" class="text-black text-decoration-none">✔ Home</a></li>
+            <li><a href="about.html" class="text-black text-decoration-none">✔ About Us</a></li>
+            <li><a href="service.html" class="text-black text-decoration-none">✔ Services</a></li>
+            <li><a href="product.html" class="text-black text-decoration-none">✔ Product</a></li>
+            <li><a href="contact.html" class="text-black text-decoration-none">✔ Contact</a></li>
+            <li><a href="photo.html" class="text-black text-decoration-none">✔ Gallery</a></li>
+            <li><a href="photo.html" class="text-black text-decoration-none">✔ Photo</a></li>
+            <li><a href="video.html" class="text-black text-decoration-none">✔ Video</a></li>
+            <li><a href="feedback.html" class="text-black text-decoration-none">✔ Feedback Form</a></li>
           </ul>
         </div>
 
       </div>
     </div>
 
-    <!-- Bottom -->
     <div class="py-3" style="background-color:black;">
-      <div <br>
-        <marquee direction="right" behavior="scroll" scrollamount="5">
-          © EliteEdge Framing!
-        </marquee>
-
-
-      </div>
+      <marquee direction="right" behavior="scroll" scrollamount="5">
+        © EliteEdge Framing!
+      </marquee>
     </div>
   </footer>
   <!-- Footer End -->
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous">
-    </script>
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+  <script>
+    const orderButtons = document.querySelectorAll(".order-btn");
+    const productNameInput = document.getElementById("productName");
+    const productPriceInput = document.getElementById("productPrice");
+    const summaryProduct = document.getElementById("summaryProduct");
+    const summaryPrice = document.getElementById("summaryPrice");
+    const orderForm = document.getElementById("orderForm");
+    const successMessage = document.getElementById("successMessage");
+
+    const customerName = document.getElementById("customerName");
+    const mobileNumber = document.getElementById("mobileNumber");
+    const address = document.getElementById("address");
+    const pincode = document.getElementById("pincode");
+    const frameType = document.getElementById("frameType");
+    const priceRange = document.getElementById("priceRange");
+
+    orderButtons.forEach(button => {
+      button.addEventListener("click", function () {
+        const product = this.getAttribute("data-product");
+        const price = this.getAttribute("data-price");
+
+        orderForm.reset();
+        successMessage.classList.add("d-none");
+
+        document.querySelectorAll(".is-invalid, .is-valid").forEach(field => {
+          field.classList.remove("is-invalid", "is-valid");
+        });
+
+        productNameInput.value = product;
+        productPriceInput.value = price;
+        summaryProduct.textContent = product;
+        summaryPrice.textContent = price;
+      });
+    });
+
+    orderForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      let isValid = true;
+
+      if (customerName.value.trim() === "") {
+        customerName.classList.add("is-invalid");
+        customerName.classList.remove("is-valid");
+        isValid = false;
+      } else {
+        customerName.classList.remove("is-invalid");
+        customerName.classList.add("is-valid");
+      }
+
+      if (!/^[0-9]{10}$/.test(mobileNumber.value.trim())) {
+        mobileNumber.classList.add("is-invalid");
+        mobileNumber.classList.remove("is-valid");
+        isValid = false;
+      } else {
+        mobileNumber.classList.remove("is-invalid");
+        mobileNumber.classList.add("is-valid");
+      }
+
+      if (address.value.trim() === "") {
+        address.classList.add("is-invalid");
+        address.classList.remove("is-valid");
+        isValid = false;
+      } else {
+        address.classList.remove("is-invalid");
+        address.classList.add("is-valid");
+      }
+
+      if (!/^[0-9]{6}$/.test(pincode.value.trim())) {
+        pincode.classList.add("is-invalid");
+        pincode.classList.remove("is-valid");
+        isValid = false;
+      } else {
+        pincode.classList.remove("is-invalid");
+        pincode.classList.add("is-valid");
+      }
+
+      if (frameType.value === "") {
+        frameType.classList.add("is-invalid");
+        frameType.classList.remove("is-valid");
+        isValid = false;
+      } else {
+        frameType.classList.remove("is-invalid");
+        frameType.classList.add("is-valid");
+      }
+
+      if (priceRange.value === "") {
+        priceRange.classList.add("is-invalid");
+        priceRange.classList.remove("is-valid");
+        isValid = false;
+      } else {
+        priceRange.classList.remove("is-invalid");
+        priceRange.classList.add("is-valid");
+      }
+
+      if (productNameInput.value.trim() === "" || productPriceInput.value.trim() === "") {
+        isValid = false;
+      }
+
+      if (isValid) {
+        successMessage.innerHTML = "✅ Order placed successfully!";
+        successMessage.classList.remove("d-none");
+
+        setTimeout(() => {
+          const modalElement = document.getElementById("orderModal");
+          const modalInstance = bootstrap.Modal.getInstance(modalElement);
+          modalInstance.hide();
+
+          orderForm.reset();
+          successMessage.classList.add("d-none");
+          productNameInput.value = "";
+          productPriceInput.value = "";
+          summaryProduct.textContent = "-";
+          summaryPrice.textContent = "-";
+
+          document.querySelectorAll(".is-invalid, .is-valid").forEach(field => {
+            field.classList.remove("is-invalid", "is-valid");
+          });
+        }, 2000);
+      } else {
+        successMessage.classList.add("d-none");
+      }
+    });
+  </script>
 </body>
+
 </html>
