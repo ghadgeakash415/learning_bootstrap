@@ -820,33 +820,113 @@
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-  <script>
-    const orderButtons = document.querySelectorAll(".order-btn");
-    const productNameInput = document.getElementById("productName");
-    const productPriceInput = document.getElementById("productPrice");
-    const summaryProduct = document.getElementById("summaryProduct");
-    const summaryPrice = document.getElementById("summaryPrice");
-    const orderForm = document.getElementById("orderForm");
-    const successMessage = document.getElementById("successMessage");
+<script>
+  const orderButtons = document.querySelectorAll(".order-btn");
+  const productNameInput = document.getElementById("productName");
+  const productPriceInput = document.getElementById("productPrice");
+  const summaryProduct = document.getElementById("summaryProduct");
+  const summaryPrice = document.getElementById("summaryPrice");
+  const orderForm = document.getElementById("orderForm");
+  const successMessage = document.getElementById("successMessage");
 
-    orderButtons.forEach(button => {
-      button.addEventListener("click", function () {
-        const product = this.getAttribute("data-product");
-        const price = this.getAttribute("data-price");
+  const customerName = document.getElementById("customerName");
+  const mobileNumber = document.getElementById("mobileNumber");
+  const address = document.getElementById("address");
+  const pincode = document.getElementById("pincode");
+  const frameType = document.getElementById("frameType");
+  const priceRange = document.getElementById("priceRange");
 
-        orderForm.reset();
-        successMessage.classList.add("d-none");
+  orderButtons.forEach(button => {
+    button.addEventListener("click", function () {
+      const product = this.getAttribute("data-product");
+      const price = this.getAttribute("data-price");
 
-        productNameInput.value = product;
-        productPriceInput.value = price;
-        summaryProduct.textContent = product;
-        summaryPrice.textContent = price;
+      orderForm.reset();
+      successMessage.classList.add("d-none");
+
+      document.querySelectorAll(".is-invalid, .is-valid").forEach(field => {
+        field.classList.remove("is-invalid", "is-valid");
       });
+
+      productNameInput.value = product;
+      productPriceInput.value = price;
+      summaryProduct.textContent = product;
+      summaryPrice.textContent = price;
     });
+  });
 
-    orderForm.addEventListener("submit", function (e) {
-      e.preventDefault();
+  orderForm.addEventListener("submit", function (e) {
+    e.preventDefault();
 
+    let isValid = true;
+
+    // Name validation
+    if (customerName.value.trim() === "") {
+      customerName.classList.add("is-invalid");
+      customerName.classList.remove("is-valid");
+      isValid = false;
+    } else {
+      customerName.classList.remove("is-invalid");
+      customerName.classList.add("is-valid");
+    }
+
+    // Mobile validation (10 digits)
+    if (!/^[0-9]{10}$/.test(mobileNumber.value.trim())) {
+      mobileNumber.classList.add("is-invalid");
+      mobileNumber.classList.remove("is-valid");
+      isValid = false;
+    } else {
+      mobileNumber.classList.remove("is-invalid");
+      mobileNumber.classList.add("is-valid");
+    }
+
+    // Address validation
+    if (address.value.trim() === "") {
+      address.classList.add("is-invalid");
+      address.classList.remove("is-valid");
+      isValid = false;
+    } else {
+      address.classList.remove("is-invalid");
+      address.classList.add("is-valid");
+    }
+
+    // Pincode validation (6 digits)
+    if (!/^[0-9]{6}$/.test(pincode.value.trim())) {
+      pincode.classList.add("is-invalid");
+      pincode.classList.remove("is-valid");
+      isValid = false;
+    } else {
+      pincode.classList.remove("is-invalid");
+      pincode.classList.add("is-valid");
+    }
+
+    // Frame type validation
+    if (frameType.value === "") {
+      frameType.classList.add("is-invalid");
+      frameType.classList.remove("is-valid");
+      isValid = false;
+    } else {
+      frameType.classList.remove("is-invalid");
+      frameType.classList.add("is-valid");
+    }
+
+    // Price range validation
+    if (priceRange.value === "") {
+      priceRange.classList.add("is-invalid");
+      priceRange.classList.remove("is-valid");
+      isValid = false;
+    } else {
+      priceRange.classList.remove("is-invalid");
+      priceRange.classList.add("is-valid");
+    }
+
+    // Product check
+    if (productNameInput.value.trim() === "" || productPriceInput.value.trim() === "") {
+      isValid = false;
+    }
+
+    if (isValid) {
+      successMessage.innerHTML = "✅ Order placed successfully!";
       successMessage.classList.remove("d-none");
 
       setTimeout(() => {
@@ -860,10 +940,16 @@
         productPriceInput.value = "";
         summaryProduct.textContent = "-";
         summaryPrice.textContent = "-";
-      }, 2000);
-    });
-  </script>
 
+        document.querySelectorAll(".is-invalid, .is-valid").forEach(field => {
+          field.classList.remove("is-invalid", "is-valid");
+        });
+      }, 2000);
+    } else {
+      successMessage.classList.add("d-none");
+    }
+  });
+</script>
 
 <section>
   <div class="container ">
